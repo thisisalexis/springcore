@@ -13,9 +13,7 @@ public class CoreAppRestController {
 
     @GetMapping(value="status")
     public ResponseEntity<AppStatus> getAppStatus() {
-        ResponseEntity<AppStatus> appStatusResponseEntity = new ResponseEntity<>(AppStatus.getInstance(), HttpStatus.OK);
-
-        return appStatusResponseEntity;
+        return new ResponseEntity<>(AppStatus.getInstance(), HttpStatus.OK);
     }
 
 }

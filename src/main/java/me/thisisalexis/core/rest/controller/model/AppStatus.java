@@ -1,8 +1,15 @@
 package me.thisisalexis.core.rest.controller.model;
 
+/**
+ * Response implementation to represent response sent back for AppStatus REST service
+ *
+ * @author Alexis Bravo
+ * @version 0.0.1
+ * @since 0.0.1
+ */
 public class AppStatus implements RestResponse {
 
-    private boolean status;
+    private Boolean status;
 
     AppStatus() {}
 
@@ -10,11 +17,11 @@ public class AppStatus implements RestResponse {
         this.status = status;
     }
 
-    public boolean isStatus() {
+    public Boolean isStatus() {
         return status;
     }
 
-    public void setStatus(boolean status) {
+    public void setStatus(Boolean status) {
         this.status = status;
     }
 
